@@ -8,66 +8,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <div>
-        <ul>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Blog</li>
-            <li>About</li>
-            <li><button>Contact Me</button></li>
+    <div class="main">
+        <div class="topfacade">
+        <ul class="nav_bar">
+            <li class="nav_item">Skills</li>
+            <li class="nav_item">Projects</li>
+            <li class="nav_item">Blog</li>
+            <li class="nav_item">About</li>
+            <li class="nav_item btn"><button>Contact Me</button></li>
         </ul>
-        <article>
+        <article id="main_img">
+            <div id="main_name">
             <h1>GAGAN KAHAL</h1>
             <p>WEB DESIGN AND DEVELOPMENT</p>
-            <img src="../media/main.jpg">
+        </div>
+            <img src="../media/main.png">
         </article>
-        <div>
-            <img src="#">
-            <img src="#">
-            <img src="#">
-            <img src="#">
+        <div id="icons">
+            <img class="icon" src="../media/xd.png">
+            <img class="icon" src="../media/html.png">
+            <img class="icon" src="../media/js.png">
+            <img class="icon" src="../media/node.png">
         </div>
         </div>
-        <div>
-         <h1>ABOUT</h1>
-         <article>
-             <img src="#">
-             <h2>Education</h2>
-             <p>B.E. in Computer Science</p>
-         </article>
-         <article>
-             <img src="#">
-             <h2>Graphic Designer</h2>
-             <p>Designing websites from last 4 years</p>
-             <p>Certification in typographic</p>
+        <div class="Skills">
+         <h1 id="big_heading">ABOUT</h1>
+         <p id="p_intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+         
+         <article class="box_style">
+             <img src="../media/design.jpg">
+             <div class="skill_info">
+             <h2 class="p_header">Graphic Designer</h2>
+             <p class="p_info">Designing websites from last 4 years</p>
+             <p class="p_info">Certification in typographic</p>
              <button>Check UI designs</button>
+         </div>
          </article>
-         <h1>Skills</h1>
-         <article>
-             <img src="#" >
-             <h2>Web Development</h2>
+         
+         <article class="box_style">
+             <img src="../media/code.jpg" >
+             <div class="skill_info">
+             <h2 class="p_header">Web Development</h2>
              <h6>Front-end development</h6>
-             <p>Used React, Redux and other modern libraries in different projects.</p>
+             <p class="p_info">Used React, Redux and other modern libraries in different projects.</p>
              <h6>Back-end development</h6>
-             <p>Used Node, java, other back-end technologies.</p>
-             <p>Linux commands line for server configuration</p>
+             <p class="p_info">Used Node, java, other back-end technologies.</p>
+             <p class="p_info">Linux commands line for server configuration</p>
              <button>Check Web Templates</button>
+            </div>
 
         </article>
+        
         </div>
-        <h1>"In Design We Believe"</h1>
+        <h1 id="quote">"In Design We Believe"</h1>
         <footer>
-        <div>
+        <div id="footer_left">
             <h2>Message me</h2>
             <form>
-                <label>Email:</label>
-                <input type="text">
-                <label>Message:</label>
-                <textarea></textarea>
+                <label for="email">Email:</label>
+                <input name="email" type="text" >
+                <label for="message">Message:</label>
+                <textarea name="message"></textarea>
             </form>
         </div>
-        <div>
+        <div id="footer_right">
             <div><p>gagankahal00@gmail.com</p></div>
             <div><p>Github.com/gaganjot99</p></div>
             <div><p>gagan__kahal</p></div>

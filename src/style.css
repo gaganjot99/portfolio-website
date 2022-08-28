@@ -18,11 +18,17 @@ button {
   font-size: 1.25rem;
   padding: 5px 20px;
   cursor: pointer;
+  font-family: "lato", sans-serif;
 }
 
 button:hover {
   background-color: #171717;
   color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .top-facade {
@@ -88,7 +94,7 @@ button:hover {
   width: 30%;
   font-size: 1.25rem;
   position: absolute;
-  top: 280px;
+  top: 230px;
   right: 500px;
 }
 
@@ -101,7 +107,7 @@ button:hover {
   flex-flow: column nowrap;
   margin-left: 5%;
   position: absolute;
-  top: 350px;
+  top: 300px;
 }
 
 .bul {
@@ -121,4 +127,75 @@ button:hover {
   color: #8d0000;
   opacity: 0.7;
   margin-left: 300px;
+}
+
+.project-div {
+  display: flex;
+  flex-flow: column nowrap;
+  border-bottom: 2px solid #232323;
+  margin: 150px 0;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 2px solid #232323;
+  padding: 75px 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.projects:hover {
+  background-color: #4d4d4d;
+  color: white;
+  transform: translateY(3%);
+}
+
+.projects h1 {
+  font-size: 3rem;
+  font-family: "lora", serif;
+}
+
+.projects p {
+  flex-basis: 35%;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.project-btn {
+  padding: 15px 30px;
+}
+
+.big-quote {
+  margin: 250px 0;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "lora";
+  text-align: center;
+}
+
+.about-div {
+  border-bottom: 2px solid #232323;
+  border-top: 2px solid #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-p {
+  padding: 0 220px;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+#about-img {
+  width: 500px;
+}
+
+.about-me h3 {
+  margin-left: 200px;
+  font-size: 2rem;
+  font-weight: 400;
 }

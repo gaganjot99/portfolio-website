@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 .main {
   background-color: rgb(219, 219, 219);
   color: rgb(33, 33, 33);
-  font-family: "lato", sans-serif;
+  font-family: "space mono", serif;
   font-weight: lighter;
 }
 
@@ -18,7 +18,7 @@ button {
   font-size: 1.25rem;
   padding: 5px 20px;
   cursor: pointer;
-  font-family: "lato", sans-serif;
+  font-family: "space mono", serif;
 }
 
 button:hover {
@@ -31,6 +31,15 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b {
+  font-weight: 600;
+}
+
 .top-facade {
   height: 90vh;
 }
@@ -41,6 +50,11 @@ img {
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid gray;
+}
+
+.nav-item:hover {
+  font-weight: 700;
+  cursor: pointer;
 }
 
 #main-logo {
@@ -78,7 +92,7 @@ img {
 }
 
 .dev-name {
-  font-family: "lora", serif;
+  font-family: "silkscreen", serif;
   font-size: 2rem;
   color: #147a7a;
 }
@@ -123,7 +137,7 @@ img {
 
 .project-title {
   font-size: 5rem;
-  font-family: "lora";
+  font-family: "space mono", serif;
   color: #8d0000;
   opacity: 0.7;
   margin-left: 300px;
@@ -155,7 +169,7 @@ img {
 
 .projects h1 {
   font-size: 3rem;
-  font-family: "lora", serif;
+  font-family: "silkscreen", sans-serif;
 }
 
 .projects p {
@@ -172,7 +186,7 @@ img {
   margin: 250px 0;
   font-size: 5rem;
   font-weight: 700;
-  font-family: "lora";
+  font-family: "space mono";
   text-align: center;
 }
 
@@ -194,8 +208,101 @@ img {
   width: 500px;
 }
 
-.about-me h3 {
+.sec-header {
   margin-left: 200px;
   font-size: 2rem;
   font-weight: 400;
+  font-family: "silkscreen", serif;
+}
+
+.bar {
+  height: 30px;
+  width: 500px;
+  border: 2px solid #252525;
+  border-radius: 15px;
+  position: relative;
+}
+
+.bar-dark {
+  background-color: #252525;
+  height: 27px;
+  border-radius: 15px;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+}
+
+.skills-div {
+  border-top: 2px solid #232323;
+  padding: 150px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.social-links {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.social-link:hover {
+  cursor: pointer;
+  color: black;
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+footer {
+  text-align: center;
+  border-top: 2px solid #232323;
+  margin-top: 50px;
+}
+
+footer h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-family: "silkscreen", sans-serif;
+  margin-top: 20px;
+}
+
+.footer-form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
+  margin: auto;
+  margin-top: auto;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.footer-form button {
+  width: 40%;
+  margin: 20px 0;
+}
+
+label {
+  margin-bottom: 3px;
+  margin-top: 17px;
+}
+
+input {
+  font-size: 1.25rem;
+  font-family: "space mono";
+  padding: 5px;
+  background-color: inherit;
+  border: 2px solid rgb(54, 54, 54);
+}
+
+textarea {
+  resize: none;
+  font-size: 1.25rem;
+  padding: 5px;
+  background-color: inherit;
+  border: 2px solid rgb(54, 54, 54);
 }

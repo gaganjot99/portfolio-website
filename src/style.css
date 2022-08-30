@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&family=Space+Mono:wght@400;700&display=swap");
 
+:root {
+  --grey: #393e41;
+  --black: #16150d;
+  --red: #960200;
+  --orange: #960200;
+  --bg: #d3d0cb;
+  --green: #17301c;
+  --yellow: #ffbd00;
+  --blue: #004e89;
+}
+
 * {
   box-sizing: border-box;
 
   margin: 0;
 }
 .main {
-  background-color: rgb(219, 219, 219);
-  color: rgb(33, 33, 33);
+  background-color: var(--bg);
+  color: var(--black);
   font-family: "space mono", serif;
   font-weight: lighter;
 }
@@ -94,7 +105,7 @@ b {
 .dev-name {
   font-family: "silkscreen", serif;
   font-size: 2rem;
-  color: #147a7a;
+  color: var(--blue);
 }
 
 #profile-img {
@@ -138,7 +149,7 @@ b {
 .project-title {
   font-size: 5rem;
   font-family: "space mono", serif;
-  color: #8d0000;
+  color: var(--red);
   opacity: 0.7;
   margin-left: 300px;
 }
@@ -170,6 +181,7 @@ b {
 .projects h1 {
   font-size: 3rem;
   font-family: "silkscreen", sans-serif;
+  color: var(--green);
 }
 
 .projects p {

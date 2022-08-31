@@ -2,6 +2,7 @@
 
 :root {
   --grey: #393e41;
+  --lightgrey: #5a5a53;
   --lightblack: #242422;
   --black: #16150d;
   --red: #960200;
@@ -172,7 +173,7 @@ b {
 }
 
 .projects:hover {
-  background-color: var(--grey);
+  background-color: var(--lightgrey);
   color: white;
   transform: translateY(3%);
 }
@@ -319,4 +320,100 @@ textarea {
   padding: 5px;
   background-color: inherit;
   border: 2px solid var(--lightblack);
+}
+
+@media (max-width: 800px) {
+  .top-facade {
+    height: auto;
+  }
+  button {
+    font-size: 1rem;
+    padding: 2px;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+  .nav-bar ul {
+    flex-basis: 70%;
+  }
+  .dev-div {
+    margin: 10px 5%;
+    width: 90%;
+  }
+  #profile-img {
+    width: 80%;
+    position: initial;
+    margin-left: 10%;
+  }
+  .dev-info {
+    width: 80%;
+    font-size: 1rem;
+    position: initial;
+    margin: 10px 10%;
+  }
+  .dev-bul {
+    display: none;
+  }
+  .project-title {
+    font-size: 3rem;
+    margin-left: 15%;
+  }
+  .project-div {
+    margin: 0;
+  }
+  .projects {
+    padding: 15px 10%;
+    flex-flow: column nowrap;
+  }
+  .projects h1 {
+    font-size: 2rem;
+  }
+  .projects p {
+    font-size: 1rem;
+  }
+  .project-btn {
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  .big-quote {
+    margin: 100px 0;
+    font-size: 2rem;
+  }
+  .sec-header {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-p {
+    padding: 20px 10%;
+    font-size: 1rem;
+  }
+  .bar {
+    height: 15px;
+    width: 250px;
+  }
+  .bar-dark {
+    height: 12px;
+    border-radius: 6px;
+  }
+  .front-end h3 {
+    font-size: 1rem;
+  }
+  .skills-div {
+    padding: 25px 0;
+  }
+  .social-links {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .footer-form {
+    width: 80%;
+    font-size: 1rem;
+  }
+  input {
+    font-size: 1rem;
+  }
 }
